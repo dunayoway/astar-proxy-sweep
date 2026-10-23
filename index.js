@@ -5,7 +5,7 @@ const { cryptoWaitReady, decodeAddress } = require("@polkadot/util-crypto");
 require("dotenv").config();
 
 const ASTR = 10n ** 18n;
-const PROXY_TRANSFER_TIP = 0n //15n * 10n ** 17n; // 1.5 ASTR
+const PROXY_TRANSFER_TIP = 10n * 10n ** 17n; // 1.5 ASTR
 const CONFIG = {
   rpc: process.env.ASTAR_WSS || "wss://rpc.astar.network",
   proxyMnemonic: process.env.SPONSOR_MNEMONIC,
